@@ -1,0 +1,20 @@
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules
+
+# turbo
+#
+.turbo
+
+# dotenv
+#
+.env
+.env.local
+
+# next
+#
+.next

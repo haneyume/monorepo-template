@@ -1,0 +1,95 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "extends": ["ultracite"],
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "lineEnding": "lf",
+    "bracketSpacing": true
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "double",
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    }
+  },
+  "linter": {
+    "rules": {
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "noStaticElementInteractions": "off",
+        "useMediaCaption": "off",
+        "noSvgWithoutTitle": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "correctness": {
+        "noUnusedFunctionParameters": "off",
+        "noUnusedImports": "off",
+        "noUnusedVariables": "off",
+        "useExhaustiveDependencies": "off"
+      },
+      "nursery": {
+        "noAwaitInLoop": "off",
+        "noNoninteractiveElementInteractions": "off",
+        "noUnknownAtRule": "off",
+        "noImportantStyles": "off"
+      },
+      "performance": {
+        "noImgElement": "off",
+        "useTopLevelRegex": "off",
+        "noNamespaceImport": "off"
+      },
+      "style": {
+        "noParameterAssign": "off",
+        "useAsConstAssertion": "off",
+        "useDefaultParameterLast": "off",
+        "useEnumInitializers": "off",
+        "useSelfClosingElements": "off",
+        "useSingleVarDeclarator": "off",
+        "noUnusedTemplateLiteral": "off",
+        "useNumberNamespace": "off",
+        "noInferrableTypes": "off",
+        "noUselessElse": "off",
+        "useForOf": "off",
+        "noNonNullAssertion": "off",
+        "useCollapsedElseIf": "off",
+        "noNestedTernary": "off"
+      },
+      "suspicious": {
+        "useAwait": "off",
+        "noConsole": "off",
+        "noExplicitAny": "off",
+        "noEmptyBlockStatements": "off",
+        "noArrayIndexKey": "off"
+      }
+    }
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules/**",
+      "!**/dist/**",
+      "!**/build/**",
+      "!**/components/ui/**",
+      "!**/*.d.ts",
+      "!**/drizzle/**"
+    ]
+  }
+}
